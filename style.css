@@ -1,0 +1,164 @@
+/* VARIABLES */
+:root {
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+
+    --ff-general: 'Red Hat Display', sans-serif;
+
+    --fw-light: 500;
+    --fw-medium: 700;
+    --fw-heavy: 900;
+}
+
+/* END VARIABLES */
+
+/* RESET DEFAULTS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+button {
+    font: inherit;
+    display: block;
+}
+
+/* END RESET DEFAULTS */
+
+/* STYLES */
+body {
+    font-family: var(--ff-general);
+    background-color: var(--clr-pale-blue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    place-content: center;
+}
+
+.order {
+    background-color: white;
+    color: var(--clr-desaturated-blue);
+    margin: 1.5rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: grid;
+    text-align: center;
+    max-width: 375px;
+}
+
+.order__content {
+    padding:1.89rem 1.5rem;
+}
+
+.order__title {
+    color: var(--clr-dark-blue);
+    font-weight: var(--fw-heavy);
+    font-size: 1.4rem;
+}
+
+.order__description {
+    font-size: 16px;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+
+.flex-group {
+    background-color: var(--clr-very-pale-blue);
+    margin-top: 1.5rem;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order__price-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+}
+
+.order__plan-box {
+    flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.order__plan-title {
+    font-size: 14px;
+    color: var(--clr-dark-blue);
+    font-weight: var(--fw-heavy);
+}
+
+.order__plan-price {
+    font-size: 14px;
+}
+
+.order__change-plan {
+    border: none;
+    background-color: var(--clr-very-pale-blue);
+    font-size: 13px;
+    text-decoration: underline;
+    color: var(--clr-bright-blue);
+    font-weight: var(--fw-heavy);
+}
+
+.order__payment {
+    display: block;
+    border-style: none;
+    width: 100%;
+    background-color: var(--clr-bright-blue);
+    color: var(--clr-very-pale-blue);
+    font-weight: var(--fw-medium);
+    padding: 0.75rem 0;
+    border-radius: 0.65rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 20px 15px 1px hwb(245 86% 0%);
+}
+
+.order__cancel {
+    margin: 0 auto;
+    border-style: none;
+    background-color: transparent;
+    font-weight: var(--fw-heavy);
+    color: var(--clr-desaturated-blue);
+    font-size: 15px;
+}
+/* END STYLES */
