@@ -81,7 +81,7 @@ body {
 }
 
 .order__content {
-    padding:1.89rem 1.5rem;
+    padding: 1.89rem 1.5rem;
 }
 
 .order__title {
@@ -138,6 +138,12 @@ body {
     text-decoration: underline;
     color: var(--clr-bright-blue);
     font-weight: var(--fw-heavy);
+    cursor: pointer;
+}
+
+.order__change-plan:hover {
+    color: hsl(245, 75%, 65%);
+    text-decoration: none;
 }
 
 .order__payment {
@@ -151,6 +157,11 @@ body {
     border-radius: 0.65rem;
     margin: 1.5rem 0;
     box-shadow: 0 20px 15px 1px hwb(245 86% 0%);
+    cursor: pointer;
+}
+
+.order__payment:hover {
+    background-color: hsl(245, 75%, 65%);
 }
 
 .order__cancel {
@@ -160,5 +171,54 @@ body {
     font-weight: var(--fw-heavy);
     color: var(--clr-desaturated-blue);
     font-size: 15px;
+    cursor: pointer;
 }
+
+.order__cancel:hover {
+    color: var(--clr-dark-blue);
+}
+
+@media(min-width: 1440px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+
+    .order {
+        max-width: 445px;
+    }
+
+    .order__content {
+        padding: 3rem 3rem;
+    }
+
+    .order__title {
+        font-size: 1.75rem;
+    }
+
+    .order__description {
+        font-size: 1.04crem;
+    }
+
+    .order__price-box {
+        padding: 0.5rem;
+    }
+
+    .order__plan-title {
+        font-size: 17px;
+    }
+
+    .order__plan-price {
+        font-size: 17px;
+    }
+
+    .order__change-plan {
+        font-size: 14px;
+    }
+
+    .order__payment {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
 /* END STYLES */
